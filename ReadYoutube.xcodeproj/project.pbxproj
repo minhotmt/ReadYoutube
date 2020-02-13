@@ -16,6 +16,8 @@
 		B4048AB223F4F95B000E9059 /* LibraryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4048AB023F4F95B000E9059 /* LibraryVC.xib */; };
 		B41129A623F28A2800F02F8C /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41129A423F28A2800F02F8C /* ProfileVC.swift */; };
 		B41129A723F28A2800F02F8C /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B41129A523F28A2800F02F8C /* ProfileVC.xib */; };
+		B414D7D723F5283100E01CF9 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B414D7D523F5283100E01CF9 /* ImageCell.swift */; };
+		B414D7D823F5283100E01CF9 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B414D7D623F5283100E01CF9 /* ImageCell.xib */; };
 		B488E27623EA561C0059C41E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488E27523EA561C0059C41E /* AppDelegate.swift */; };
 		B488E27823EA561C0059C41E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488E27723EA561C0059C41E /* SceneDelegate.swift */; };
 		B488E27A23EA561C0059C41E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B488E27923EA561C0059C41E /* ContentView.swift */; };
@@ -42,6 +44,8 @@
 		B4048AB023F4F95B000E9059 /* LibraryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryVC.xib; sourceTree = "<group>"; };
 		B41129A423F28A2800F02F8C /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		B41129A523F28A2800F02F8C /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		B414D7D523F5283100E01CF9 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		B414D7D623F5283100E01CF9 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 		B488E27223EA561C0059C41E /* ReadYoutube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadYoutube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B488E27523EA561C0059C41E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B488E27723EA561C0059C41E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 			children = (
 				B4048AA823F4DFD5000E9059 /* TimeLineCell.swift */,
 				B4048AA923F4DFD5000E9059 /* TimeLineCell.xib */,
+				B414D7D523F5283100E01CF9 /* ImageCell.swift */,
+				B414D7D623F5283100E01CF9 /* ImageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 				B4048AAE23F4DFD5000E9059 /* TimeLineCell.xib in Resources */,
 				B488E28223EA561D0059C41E /* LaunchScreen.storyboard in Resources */,
 				B4048AB223F4F95B000E9059 /* LibraryVC.xib in Resources */,
+				B414D7D823F5283100E01CF9 /* ImageCell.xib in Resources */,
 				B488E29123EA5A620059C41E /* HomeTabbarVC.xib in Resources */,
 				B488E27F23EA561D0059C41E /* Preview Assets.xcassets in Resources */,
 				B41129A723F28A2800F02F8C /* ProfileVC.xib in Resources */,
@@ -309,6 +316,7 @@
 			files = (
 				B488E27623EA561C0059C41E /* AppDelegate.swift in Sources */,
 				B4048AAB23F4DFD5000E9059 /* HomeVC.swift in Sources */,
+				B414D7D723F5283100E01CF9 /* ImageCell.swift in Sources */,
 				B41129A623F28A2800F02F8C /* ProfileVC.swift in Sources */,
 				B488E29023EA5A620059C41E /* HomeTabbarVC.swift in Sources */,
 				B4048AB123F4F95B000E9059 /* LibraryVC.swift in Sources */,

@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondVC" customModule="ReadYoutube" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="VD9-ae-A68" id="DKA-DH-vuD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,17 +18,18 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7v0-8A-aSc">
-                    <rect key="frame" x="173.5" y="436" width="67" height="24"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VD9-ae-A68">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="7v0-8A-aSc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="O2x-Ta-EEV"/>
-                <constraint firstItem="7v0-8A-aSc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pHB-jL-3G9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VD9-ae-A68" secondAttribute="bottom" id="Hbq-UK-lc4"/>
+                <constraint firstItem="VD9-ae-A68" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Hx7-ng-d9r"/>
+                <constraint firstItem="VD9-ae-A68" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dtU-7y-Qpk"/>
+                <constraint firstItem="VD9-ae-A68" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="rCY-J4-2RH"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="154"/>
