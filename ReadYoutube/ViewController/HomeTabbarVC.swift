@@ -18,13 +18,15 @@ class HomeTabbarVC: UITabBarController {
     }
     
     func setupTabbar() {
-        let firstViewController = HomeVC()
-        firstViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
-        let secondViewController = SecondVC()
-        secondViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .more, tag: 1)
+        let firstViewController = SecondVC()
+        firstViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "icon_home"), tag: 0)
+        let secondViewController = HomeVC()
+        secondViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "icon_fire"), tag: 1)
         let profileViewController = ProfileVC()
-        profileViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .mostRecent, tag: 2)
-        let tabBarList = [firstViewController, secondViewController, profileViewController]
+        profileViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "icon_profile"), tag: 2)
+        let libraryVC = LibraryVC()
+        libraryVC.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "icon_notebook"), tag: 3)
+        let tabBarList = [firstViewController, secondViewController, libraryVC, profileViewController]
         viewControllers = tabBarList
     }
     
