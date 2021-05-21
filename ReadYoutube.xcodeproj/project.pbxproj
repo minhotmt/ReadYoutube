@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95EE057B265759F60054A63A /* YoutubeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE0579265759F60054A63A /* YoutubeVC.swift */; };
+		95EE057C265759F60054A63A /* YoutubeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95EE057A265759F60054A63A /* YoutubeVC.xib */; };
 		B4048AAA23F4DFD5000E9059 /* PhotoOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4048AA223F4DFD5000E9059 /* PhotoOperations.swift */; };
 		B4048AAB23F4DFD5000E9059 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4048AA523F4DFD5000E9059 /* HomeVC.swift */; };
 		B4048AAC23F4DFD5000E9059 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4048AA623F4DFD5000E9059 /* HomeVC.xib */; };
@@ -35,6 +37,8 @@
 		229A6953E7B2C7C9A2FC5D7A /* Pods_ReadYoutube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadYoutube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DC2DDB4D4654915925668B4 /* Pods-ReadYoutube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadYoutube.release.xcconfig"; path = "Target Support Files/Pods-ReadYoutube/Pods-ReadYoutube.release.xcconfig"; sourceTree = "<group>"; };
 		44BE206C9ABDF4B4B781023E /* Pods-ReadYoutube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadYoutube.debug.xcconfig"; path = "Target Support Files/Pods-ReadYoutube/Pods-ReadYoutube.debug.xcconfig"; sourceTree = "<group>"; };
+		95EE0579265759F60054A63A /* YoutubeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVC.swift; sourceTree = "<group>"; };
+		95EE057A265759F60054A63A /* YoutubeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YoutubeVC.xib; sourceTree = "<group>"; };
 		B4048AA223F4DFD5000E9059 /* PhotoOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoOperations.swift; sourceTree = "<group>"; };
 		B4048AA523F4DFD5000E9059 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		B4048AA623F4DFD5000E9059 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
@@ -108,20 +112,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		B484F00F23F500DF005CCBBB /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		B484F01023F500EB005CCBBB /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		B488E26923EA561C0059C41E = {
 			isa = PBXGroup;
 			children = (
@@ -143,8 +133,6 @@
 		B488E27423EA561C0059C41E /* ReadYoutube */ = {
 			isa = PBXGroup;
 			children = (
-				B484F01023F500EB005CCBBB /* Models */,
-				B484F00F23F500DF005CCBBB /* Services */,
 				B4048AA123F4DFD5000E9059 /* LazyLoadOperator */,
 				B4048AA723F4DFD5000E9059 /* Views */,
 				B488E28D23EA57310059C41E /* ViewController */,
@@ -177,6 +165,8 @@
 				B41129A523F28A2800F02F8C /* ProfileVC.xib */,
 				B4048AAF23F4F95B000E9059 /* LibraryVC.swift */,
 				B4048AB023F4F95B000E9059 /* LibraryVC.xib */,
+				95EE0579265759F60054A63A /* YoutubeVC.swift */,
+				95EE057A265759F60054A63A /* YoutubeVC.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -253,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4048AAE23F4DFD5000E9059 /* TimeLineCell.xib in Resources */,
+				95EE057C265759F60054A63A /* YoutubeVC.xib in Resources */,
 				B488E28223EA561D0059C41E /* LaunchScreen.storyboard in Resources */,
 				B4048AB223F4F95B000E9059 /* LibraryVC.xib in Resources */,
 				B414D7D823F5283100E01CF9 /* ImageCell.xib in Resources */,
@@ -318,6 +309,7 @@
 				B4048AAB23F4DFD5000E9059 /* HomeVC.swift in Sources */,
 				B414D7D723F5283100E01CF9 /* ImageCell.swift in Sources */,
 				B41129A623F28A2800F02F8C /* ProfileVC.swift in Sources */,
+				95EE057B265759F60054A63A /* YoutubeVC.swift in Sources */,
 				B488E29023EA5A620059C41E /* HomeTabbarVC.swift in Sources */,
 				B4048AB123F4F95B000E9059 /* LibraryVC.swift in Sources */,
 				B488E27823EA561C0059C41E /* SceneDelegate.swift in Sources */,
