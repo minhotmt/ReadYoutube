@@ -9,4 +9,8 @@ target 'ReadYoutube' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'AlamofireImage'
+  pod 'Firebase/Analytics'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  
 end
