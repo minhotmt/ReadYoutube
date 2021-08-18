@@ -21,8 +21,26 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         
-        let contentView = HomeTabbarVC()
-
+        let contentView = UITabBarController()
+        
+        let firstViewController = YoutubeVC()
+        firstViewController.tabBarItem = UITabBarItem(title: "Trang chủ", image: UIImage(named: "icon_home"), tag: 0)
+        firstViewController.title = "Trang chủ"
+        
+        let secondViewController = ProfileVC()
+        secondViewController.tabBarItem = UITabBarItem(title: "Thư viện", image: UIImage(named: "icon_notebook"), tag: 1)
+        secondViewController.title = "Thư viện"
+        
+        let thirdViewController = ProfileVC()
+        thirdViewController.title = "Thông tin"
+        thirdViewController.tabBarItem = UITabBarItem(title: "Thông tin", image: UIImage(named: "icon_profile"), tag: 2)
+        
+        let controllers = [firstViewController, secondViewController, thirdViewController].map { (viewController) -> UINavigationController in
+            UINavigationController(rootViewController: viewController)
+        }
+        
+        contentView.setViewControllers(controllers, animated: true)
+        
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)

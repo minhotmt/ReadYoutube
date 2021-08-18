@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailVideoVC" customModule="ReadYoutube" customModuleProvider="target">
+            <connections>
+                <outlet property="v2" destination="sW4-gn-NhC" id="kIr-22-maa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewPlayer" destination="9vh-cG-jdS" id="lUb-xN-NQw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vh-cG-jdS" customClass="YTPlayerView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="250"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="Gz0-Sx-Xw8"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sW4-gn-NhC">
+                    <rect key="frame" x="0.0" y="294" width="414" height="250"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="Yl3-gY-7ja"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="sW4-gn-NhC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5rV-dk-teu"/>
+                <constraint firstItem="9vh-cG-jdS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ocy-oZ-182"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9vh-cG-jdS" secondAttribute="trailing" id="eRZ-df-jml"/>
+                <constraint firstItem="9vh-cG-jdS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="od6-bY-rS5"/>
+                <constraint firstItem="sW4-gn-NhC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qfo-6P-cSh"/>
+                <constraint firstItem="sW4-gn-NhC" firstAttribute="top" secondItem="9vh-cG-jdS" secondAttribute="bottom" id="upB-I4-xX1"/>
+            </constraints>
+            <point key="canvasLocation" x="7" y="67"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -8,9 +8,8 @@ target 'ReadYoutube' do
   # Pods for ReadYoutube
   pod 'Alamofire'
   pod 'SwiftyJSON'
-  pod 'AlamofireImage'
-  pod 'Firebase/Analytics'
   pod 'RxSwift'
   pod 'RxCocoa'
-  
+  pod 'Kingfisher', '~> 6.0'
+  pod 'youtube-ios-player-helper'
 end

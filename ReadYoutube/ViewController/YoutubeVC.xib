@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YoutubeVC" customModule="ReadYoutube" customModuleProvider="target">
             <connections>
+                <outlet property="searchBarItem" destination="Uzw-xm-zGO" id="mzW-l7-GJe"/>
+                <outlet property="tableView" destination="DIK-EJ-XW6" id="BEn-yz-ufw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,8 +20,34 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DIK-EJ-XW6">
+                    <rect key="frame" x="0.0" y="90" width="414" height="772"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uzw-xm-zGO">
+                    <rect key="frame" x="0.0" y="44" width="414" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="FYx-pN-qye"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
+                    <scopeButtonTitles>
+                        <string>Title</string>
+                        <string>Title</string>
+                    </scopeButtonTitles>
+                </searchBar>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Uzw-xm-zGO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7i6-KH-zp7"/>
+                <constraint firstItem="Uzw-xm-zGO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="BWo-UF-l9U"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="DIK-EJ-XW6" secondAttribute="bottom" id="R6F-bB-dqw"/>
+                <constraint firstItem="DIK-EJ-XW6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RGF-Qk-StI"/>
+                <constraint firstItem="DIK-EJ-XW6" firstAttribute="top" secondItem="Uzw-xm-zGO" secondAttribute="bottom" id="ekx-vL-Rdy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DIK-EJ-XW6" secondAttribute="trailing" id="fgD-ZS-1qP"/>
+                <constraint firstAttribute="trailing" secondItem="Uzw-xm-zGO" secondAttribute="trailing" id="hRl-Y7-Cte"/>
+            </constraints>
             <point key="canvasLocation" x="140.57971014492756" y="141.96428571428569"/>
         </view>
     </objects>
