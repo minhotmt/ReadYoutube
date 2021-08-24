@@ -11,7 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailVideoVC" customModule="ReadYoutube" customModuleProvider="target">
             <connections>
-                <outlet property="v2" destination="sW4-gn-NhC" id="kIr-22-maa"/>
+                <outlet property="labelSpeed" destination="JjT-dY-l8h" id="KpI-wL-q7b"/>
+                <outlet property="sliderView" destination="PbV-eN-iav" id="c2F-ea-j1q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewPlayer" destination="9vh-cG-jdS" id="lUb-xN-NQw"/>
             </connections>
@@ -28,23 +29,31 @@
                         <constraint firstAttribute="height" constant="250" id="Gz0-Sx-Xw8"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sW4-gn-NhC">
-                    <rect key="frame" x="0.0" y="294" width="414" height="250"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="250" id="Yl3-gY-7ja"/>
-                    </constraints>
-                </view>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="PbV-eN-iav">
+                    <rect key="frame" x="18" y="319" width="328" height="31"/>
+                    <connections>
+                        <action selector="sliderAction:" destination="-1" eventType="valueChanged" id="Jld-j8-vIR"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjT-dY-l8h">
+                    <rect key="frame" x="354" y="323.5" width="50" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="sW4-gn-NhC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5rV-dk-teu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PbV-eN-iav" secondAttribute="trailing" constant="70" id="3Io-86-BBl"/>
+                <constraint firstItem="JjT-dY-l8h" firstAttribute="leading" secondItem="PbV-eN-iav" secondAttribute="trailing" constant="10" id="63Y-HI-rUZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JjT-dY-l8h" secondAttribute="trailing" constant="10" id="BTO-Pn-pJQ"/>
+                <constraint firstItem="JjT-dY-l8h" firstAttribute="centerY" secondItem="PbV-eN-iav" secondAttribute="centerY" id="D5u-eh-lnh"/>
                 <constraint firstItem="9vh-cG-jdS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ocy-oZ-182"/>
+                <constraint firstItem="PbV-eN-iav" firstAttribute="top" secondItem="9vh-cG-jdS" secondAttribute="bottom" constant="25" id="eD6-IP-XzD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9vh-cG-jdS" secondAttribute="trailing" id="eRZ-df-jml"/>
+                <constraint firstItem="PbV-eN-iav" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="iC1-W7-tH7"/>
                 <constraint firstItem="9vh-cG-jdS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="od6-bY-rS5"/>
-                <constraint firstItem="sW4-gn-NhC" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qfo-6P-cSh"/>
-                <constraint firstItem="sW4-gn-NhC" firstAttribute="top" secondItem="9vh-cG-jdS" secondAttribute="bottom" id="upB-I4-xX1"/>
             </constraints>
             <point key="canvasLocation" x="7" y="67"/>
         </view>
